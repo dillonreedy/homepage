@@ -54,9 +54,11 @@
   text-align: center;
   background: white;
   border-radius: 25px;
-  padding: 20px;
-  font-family: 'Pacifico', cursive; /* Apply the font here */
+}
+
+.title {
   font-size: 2em;
+  font-family: 'Pacifico', cursive; /* Apply the font here */
 }
 
 .line-and-text {

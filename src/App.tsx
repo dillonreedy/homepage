@@ -93,9 +93,12 @@ const App = () => {
       />
       <div className="content">
         <div className="line-and-text">
-          <h1>Dillon Reedy</h1>
+          <div className="title" >
+            <h1>Dillon Reedy</h1>
+          </div>
           <hr className="line"/>
-        </div>  
+        </div>
+        <p>Software Developer & AI Engineer</p>  
       </div>
     </div>
   );
