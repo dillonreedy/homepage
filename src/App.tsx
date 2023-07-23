@@ -26,7 +26,7 @@ const App = () => {
             options={{
                 background: {
                     color: {
-                        value: "#0d47a1",
+                        value: "#023e8a",
                     },
                 },
                 fpsLimit: 120,
@@ -47,21 +47,14 @@ const App = () => {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 175,
                             duration: 0.4,
                         },
                     },
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
-                    },
-                    links: {
-                        color: "#ffffff",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
+                        value: ["#48cae4", "#ade8f4", "#ade8f4", "#caf0f8" ],
                     },
                     move: {
                         direction: "none",
@@ -70,13 +63,13 @@ const App = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 2000,
                         },
                         value: 80,
                     },
@@ -87,7 +80,7 @@ const App = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 20, max: 50 },
                     },
                 },
                 detectRetina: true,
