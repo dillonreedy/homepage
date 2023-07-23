@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .App {
   text-align: center;
 }
@@ -53,4 +55,18 @@
   background: white;
   border-radius: 25px;
   padding: 20px;
+  font-family: 'Pacifico', cursive; /* Apply the font here */
+  font-size: 2em;
+}
+
+.line-and-text {
+  display: flex;
+  align-items: center; /* This will vertically align the line and the text */
+}
+
+.line {
+  width: 4em; /* This will make the line take up as much space as it can */
+  border: none; /* Removes the default border */
+  border-top: 8px solid black; /* Adds a 2px border on top, effectively making the line 2px thick */
+  margin-left: 20px;
 }

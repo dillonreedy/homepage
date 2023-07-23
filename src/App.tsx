@@ -92,7 +92,11 @@ const App = () => {
         }}
       />
       <div className="content">
-        <h1>Dillon Reedy</h1>  
+        <div className="line-and-text">
+          <h1>Dillon Reedy</h1>
+          <hr className="line"/>
+        </div>
+          
       </div>
     </div>
   );
