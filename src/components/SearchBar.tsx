@@ -24,7 +24,7 @@ interface PageDescriptionCard {
 
 const SearchBar: React.FC = () => {
   const [query, setQuery] = useState<string>('');
-  const [pageDescriptionCards, setPageDescriptionCards] =
+  const [pageDescriptionCards] =
     useState<PageDescriptionCard[]>(PAGE_DESCRIPTIONS);
   const navigate = useNavigate();
 
