@@ -14,28 +14,13 @@ import {
   CardActionArea,
   Typography,
 } from '@mui/material';
-
-const PAGE_NAMES = ['particles', 'css-drawing'];
+import { PAGE_DESCRIPTIONS, PAGE_NAMES } from '../data/page';
 
 interface PageDescriptionCard {
   title: string;
   path: string;
   description: string;
 }
-
-const PAGE_DESCRIPTIONS = [
-  {
-    title: 'Particles',
-    path: 'particles',
-    description:
-      'A landing page using the ts-particles package for particle animations.',
-  },
-  {
-    title: 'CSS Drawing',
-    path: 'css-drawing',
-    description: 'A drawing done entirely with CSS',
-  },
-];
 
 const SearchBar: React.FC = () => {
   const [query, setQuery] = useState<string>('');
