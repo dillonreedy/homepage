@@ -1,10 +1,10 @@
 import { useCallback } from 'react';
 import type { Container, Engine } from 'tsparticles-engine';
-import Particles from 'react-tsparticles';
+import { Particles as ParticlesComponent } from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 
 
-const Landing: React.FC = () => {
+const Particles: React.FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
@@ -17,7 +17,7 @@ const Landing: React.FC = () => {
   );
   return (
     <div className="container">
-      <Particles
+      <ParticlesComponent
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -96,4 +96,4 @@ const Landing: React.FC = () => {
   );
 }
 
-export default Landing;
+export default Particles;
